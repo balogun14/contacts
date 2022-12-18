@@ -123,10 +123,13 @@ class _NewContactViewStateState extends State<NewContactViewState> {
         children: [
           TextField(
             controller: _controller,
-            decoration: const InputDecoration(
+            decoration:  InputDecoration(
               hintText: 'Enter a new contact name here...',
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(50),
+              ))
             ),
-          ),
+
           TextButton(
             onPressed: () {
               final contact = Contact(name: _controller.text);
