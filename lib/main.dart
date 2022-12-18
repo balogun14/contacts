@@ -31,7 +31,7 @@ class ContactBook extends ValueNotifier<List<Contact>> {
   factory ContactBook() => _shared;
 
   ContactBook._sharedInstance() : super([]);
-  int get lenght => value.length;
+  int get length => value.length;
 
   void add({required Contact contact}) {
     final contacts = value;
